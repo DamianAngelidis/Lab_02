@@ -1,8 +1,12 @@
 var properAnswer1 = false;
+var properAnswer2 = false;
+var properAnswer3 = false;
+var properAnswer4 = false;
+var properAnswer5 = false;
 
-while(properAnswer1 === false) { 
+while(properAnswer1 === false) {
 
-    var writesPoems =  prompt('Does Damian writes poetry (y/n)');
+    var writesPoems =  prompt('Does Damian write poetry?');
 
     if (writesPoems.toLowerCase() === 'yes' || writesPoems.toLowerCase() === 'y') {
         alert('You are correct! It\'s been a hobby and a habit of mine since 5th grade.');
@@ -17,13 +21,12 @@ while(properAnswer1 === false) {
     }
 
 }
-console.log('The user answered ' + writesPoems + ' when asked whether or not Damian wrote poetry');
 
-var properAnswer2 = false;
+    console.log('The user answered ' + writesPoems + ' when asked whether or not Damian wrote poetry');
 
 while(properAnswer2 === false) { 
 
-    var favPizza =  prompt('Is New York style pizza Damian\'s favorite type of pizza? (y/n)');
+    var favPizza = prompt('Is Damian\'s favority type of pizza New York style? (y/n)')
 
     if (favPizza.toLowerCase() === 'yes' || favPizza.toLowerCase() === 'y') {
         alert('You absolute buffoon. How dare you put that disgusting slice above the holy pie that is Chicago deep dish. I would say there is a special place in ell for your kind, but New York already is that place.');
@@ -38,9 +41,8 @@ while(properAnswer2 === false) {
     }
 
 }
-console.log('The user answered ' + favPizza + ' when asked whether or not Damian\'s favorite type of pizza was New York style.');
 
-var properAnswer3 = false;
+    console.log('The user answered ' + favPizza + ' when asked whether or not Damian\'s favorite type of pizza was New York style.');
 
 while(properAnswer3 === false) { 
 
@@ -59,9 +61,8 @@ while(properAnswer3 === false) {
     }
 
 }
-console.log('The user answered ' + hasDog + ' when asked whether or not Damian had a dog.');
 
-var properAnswer4 = false;
+    console.log('The user answered ' + hasDog + ' when asked whether or not Damian had a dog.');
 
 while(properAnswer4 === false) { 
 
@@ -80,10 +81,8 @@ while(properAnswer4 === false) {
     }
 
 }
-console.log('The user answered ' + alive + ' when asked whether or not Damian was alive.');
 
-
-var properAnswer5 = false;
+    console.log('The user answered ' + alive + ' when asked whether or not Damian was alive.');
 
 while(properAnswer5 === false) { 
 
@@ -102,4 +101,5 @@ while(properAnswer5 === false) {
     }
 
 }
-console.log('The user answered ' + imBatman + ' when asked whether or not Damian is Batman.');
+
+    console.log('The user answered ' + imBatman + ' when asked whether or not Damian is Batman.');

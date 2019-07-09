@@ -1,0 +1,33 @@
+body {
+    background: lightblue;
+}
+h1 {
+    font-size: 24pt;
+    padding: 20px 5px;
+    text-align: center;
+}
+h2 {
+    font-size: 20pt;
+    padding: 0px 10px 10px 20px;
+    text-align: center;
+}
+h3 {
+    font-size: 16pt;
+    padding: 10px 10px;
+    text-align: center;
+}
+p {
+    font-size: 12pt;
+    padding: 10px 5px;
+}
+li {
+    padding: 5px 5px;
+}
+.generalInfo {
+    padding: 5px 0px 5px 350px;
+    width: 300px;
+}
+.favFoods {
+    padding: 5px 0px 5px 700px;
+    width: 300px;
+}
