@@ -1,5 +1,6 @@
 body {
     background: lightblue;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 h1 {
     font-size: 24pt;
@@ -13,21 +14,26 @@ h2 {
 }
 h3 {
     font-size: 16pt;
-    padding: 10px 10px;
+    padding: 10px 20px;
+    border: 5px solid black;
     text-align: center;
 }
 p {
     font-size: 12pt;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    white-space: normal;
 }
 li {
-    padding: 5px 5px;
+    padding: 5px 10px;
+    font-size: 12pt;
 }
-.generalInfo {
-    padding: 5px 0px 5px 350px;
+#generalInfo, .favFoods, .hobbies {
+    position: relative;
+    left: 240px;
     width: 300px;
 }
-.favFoods {
-    padding: 5px 0px 5px 700px;
-    width: 300px;
+#firstQuote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 0px;    
 }
