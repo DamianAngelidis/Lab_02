@@ -8,3 +8,8 @@
 #2. An about me page that contains more detailed personal and professional information.  
 #3. A blog page with various posts that allows for updating and comments.  
 #4. A poetry page to display my poems.  
+
+#Driver - Peter Carmichael  
+#Navigator - Damian Angelidis
+
+#We worked on this code together
