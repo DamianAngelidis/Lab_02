@@ -212,7 +212,10 @@ var modal = document.getElementById("cover");
 function questPrompt(){
     // 'use strict';
 
-
+questionAsk = ['Do I write Poetry?','Do I have a dog?','Is my favorite type of pizza NY style?','Am I alive?','Am I Batman?'];
+answerQuest = ['yes','yes','no','yes','no'];
+correctResponse = ['You are correct! It\'s been a hobby and a habit of mine since 5th grade.','You, my fellow person of culture, are correct. Us Chicago deep dish purists must stick together to defend against the New York style heathens','According to the judge, I am legally required to refer to Beau as a dog. Colloquioally, I prefer to address him as a furry spawn of pure evil whose cold, void-like, and empty eyes hide his singular goal to ruin my life by any means neccesary.','hahahahahahahahahahahahahahahahah. Who knows?','You\'re right, of course. I just find it a little hurtful that you didn\'t even consider that I could be. I knew it was unfunny and desperate when I wrote it, I guess I was just hoping that you would humor me for the sake of support. Guess not'];
+wrongResponse = ['Actually, I loving writing poetry, and have been doing it since the 5th grade','You absolute buffoon. How dare you put that disgusting slice above the holy pie that is Chicago deep dish. I would say there is a special place in ell for your kind, but New York already is that place.','If only. Unfortuantely, I am stuck in my personal, agonizing limbo with Beau, and as each day goes by, I become more fearful that he is immortal. He has consumed all that was good in my life, but refuses to end me. Instead he just sits there, taunting me with his tongue out, staring deep into my now empty soul. At least I don\'t have a cat.','hahahahahahahahahahahahahahahahah. It\'s all a simulation.','What? Of course he\'s not Batman. Here are the question YOU need to be asking: What led you to believe that a real person could be a fictional character How bad is Damian\'s sense of humour, that he actually wrote that question?'];
 
 var properAnswer = false;
 var correctGuess = false;
