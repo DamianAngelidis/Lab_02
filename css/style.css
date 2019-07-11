@@ -1,6 +1,7 @@
 body {
     background: lightblue;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    counter-reset: movieList;
 }
 
 h1 {
@@ -67,4 +68,11 @@ li {
     top: 50vh;
     height: 100px;
     width: 150px;
+}
+#listOne ol li::before {
+    counter-increment: movieList;
+    content: counter(movieList) ": ";
+}
+#listOne h3 {
+    text-align: center;
 }
