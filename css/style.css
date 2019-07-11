@@ -69,10 +69,35 @@ li {
     height: 100px;
     width: 150px;
 }
+
+#target {
+    width: 47%;
+    border: solid black 3px; 
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#firstPic {
+    width: 47%;
+    border: solid black 3px; 
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+#listOne {
+    width: 300px;   
+    border: solid black 3px; 
+    padding: 10px;
+    margin: 10px;
+}
+
 #listOne ol li::before {
     counter-increment: movieList;
     content: counter(movieList) ": ";
 }
+
 #listOne h3 {
     text-align: center;
 }

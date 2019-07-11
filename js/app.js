@@ -1,27 +1,30 @@
-var properAnswer1 = false;
-var properAnswer2 = false;
-var properAnswer3 = false;
-var properAnswer4 = false;
-var properAnswer5 = false;
+'use strict';
 
-var correctAnswer = 0;
 
+
+var properAnswer = false;
 var correctGuess = false;
 var numGuess = 0;
 
+var correctAnswer = 0;
+
 favCountries = ["Greece", "Ethiopia", "France", "United States"];
-var correctGuess2 = false;
-var numGuess2 = 0;
 
 var modal = document.getElementById("cover");
 
+
+//Close the Modal
 function closeModal() {
     modal.style.display = "none";
 }
 
+//Playing the game
 function questions() {
+
     console.log('Im in')
-    while(properAnswer1 === false) {
+
+    //Poetry Question
+    while(properAnswer === false) {
 
         var writesPoems =  prompt('Does Damian write poetry?');
 
@@ -40,9 +43,11 @@ function questions() {
 
     }
 
-        console.log('The user answered ' + writesPoems + ' when asked whether or not Damian wrote poetry');
+    console.log('The user answered ' + writesPoems + ' when asked whether or not Damian wrote poetry', writesPoems, properAnswer);
+    properAnswer = false;
 
-    while(properAnswer2 === false) { 
+    //Favorite Pizza Question
+    while(properAnswer === false) { 
 
         var favPizza = prompt('Is Damian\'s favority type of pizza New York style? (y/n)')
 
@@ -61,9 +66,11 @@ function questions() {
 
     }
 
-        console.log('The user answered ' + favPizza + ' when asked whether or not Damian\'s favorite type of pizza was New York style.');
+    console.log('The user answered ' + favPizza + ' when asked whether or not Damian\'s favorite type of pizza was New York style.', favPizza, properAnswer);
+    properAnswer = false;
 
-    while(properAnswer3 === false) { 
+    //Dog Question
+    while(properAnswer === false) { 
 
         var hasDog =  prompt('Does Damian have a dog? (y/n)');
 
@@ -82,9 +89,11 @@ function questions() {
 
     }
 
-        console.log('The user answered ' + hasDog + ' when asked whether or not Damian had a dog.');
+    console.log('The user answered ' + hasDog + ' when asked whether or not Damian had a dog.', hasDog, properAnswer);
+    properAnswer = false;
 
-    while(properAnswer4 === false) { 
+    //Alive Question
+    while(properAnswer === false) { 
 
         var alive =  prompt('Is Damian alive? (y/n)');
 
@@ -103,9 +112,11 @@ function questions() {
 
     }
 
-        console.log('The user answered ' + alive + ' when asked whether or not Damian was alive.');
+    console.log('The user answered ' + alive + ' when asked whether or not Damian was alive.', alive, properAnswer);
+    properAnswer = false;
 
-    while(properAnswer5 === false) { 
+    //Batman question
+    while(properAnswer === false) { 
 
         var imBatman =  prompt('Is Damian Batman? (y/n)');
 
@@ -124,18 +135,22 @@ function questions() {
 
     }
 
-    while(correctGuess === false && numGuess < 4) {
+    console.log('The user answered ' + imBatman + ' when asked whether or not Damian was Batman.', imBatman, properAnswer);
+    properAnswer = false;
 
-        var x = parseInt(prompt("Now that you know all this about me, this question should be easy to you. How many times have I gotten an ear infection."));
-        console.log('user answer', x, typeof(x));
+    //Ear Infection Question
+    while(properAnswer === false && numGuess < 4) {
 
-        if(x === 13) {
+        var guess = parseInt(prompt("Now that you know all this about me, this question should be easy to you. How many times have I gotten an ear infection."));
+
+        if(guess === 13) {
             alert("Congrats! You've guessed the right number");
             correctGuess = true;
-        } else if(x > 13) {
+            correctAnswer = correctAnswer + 1;
+        } else if(guess > 13) {
             numGuess++;
             alert("Unfortuantely the answer is smaller than that. You have " + (4 - numGuess) +' guesses left.');
-        } else if(x < 13) {
+        } else if(guess < 13) {
             numGuess++;
             alert('That\'s too low. Try a bigger number. You have ' + (4 - numGuess) + ' guesses left.');
         } else {
@@ -144,34 +159,51 @@ function questions() {
 
     }
 
+    //If the user did not get the right answer, tell them
     if(correctGuess === false && numGuess === 3) {
         alert('The correct was 13. THat\'s right I\'ve had 13 ear infections');
     }
 
-        console.log('The user answered ' + imBatman + ' when asked whether or not Damian is Batman.');
+    properAnswer = false;
+    numGuess = 0;
 
-    while (correctGuess2 === false && numGuess2 < 6) {
+    //Favorite countries
+    while (properAnswer === false && numGuess < 6) {
 
-        var y = prompt("Ok that question was easy. Now you have to guess one of my favorite countries");
+        guess = prompt("Ok that question was easy. Now you have to guess one of my favorite countries");
         console.log(y)
 
         for(i = 0; i < favCountries.length; i++) {
+
             console.log(favCountries[i])
+             
             if(y.toLowerCase() === favCountries[i].toLowerCase()) {
+
                 console.log(y, favCountries[i]);
                 correctGuess2 = true;
                 console.log(correctGuess2);
                 alert('That\'s correct! ' + favCountries[i] + ' is one of my favorite countries.')
+                correctAnswer = correctAnswer + 1;
                 break;
+
             }
         }
-        if(correctGuess2 === false ){
-            numGuess2++;
+
+        if(properAnswer === false ){
+
+            numGuess++;
             alert('While it is interesting, ' + y + ' is not one of my countries You have ' + (6 - numGuess2) + ' guesses left.');
+        
         }
     }
 
-    alert('The complete list of my favorite countries are Greece, Ethiopia, France, and the United States');
+    //So everyone can know all my favorite countries
+    if(properAnswer === false) {
+        alert('The complete list of my favorite countries are Greece, Ethiopia, France, and the United States');
+    }
+    console.log('The user final answer was ' + guess, guess, correctGuess, numGuess);
+
+    alert('Good job finishing the guessing game. You got ' + correctAnswer + ' questions right out of 7. ');
 
     modal.style.display = "none";
 }
