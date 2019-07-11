@@ -5,11 +5,14 @@ body {
 }
 
 h1 {
-    font-size: 20pt;
+    font-size: 22pt;
 }
 
 h2 {
-    font-size: 16pt;
+    font-size: 18pt;
+}
+h3 {
+    font-size: 18pt;
 }
 
 p {
@@ -70,20 +73,29 @@ li {
     width: 150px;
 }
 
-#target {
+#target, #firstPic {
     width: 47%;
-    border: solid black 3px; 
+    /* border: solid black 3px;  */
     padding: 10px;
     margin: 10px;
-    display: inline-block;
+    position: relative;
+    line-height: 1.5em;
+}
+
+#target {
+    top: 30px;
 }
 
 #firstPic {
-    width: 47%;
-    border: solid black 3px; 
-    padding: 10px;
-    margin: 10px;
-    display: inline-block;
+    left: 750px;
+    top: -170px;
+}
+#actualPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    max-width: 50%;
 }
 
 #listOne {
