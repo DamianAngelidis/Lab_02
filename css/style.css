@@ -1,5 +1,5 @@
 body {
-    background: lightblue;
+    background-image: images/url('images/body-background.jpg');     
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     counter-reset: movieList;
 }
@@ -27,32 +27,29 @@ p {
 li {
     font-size: 12pt;
 }
-.nav {
+#navBar {
     background-color: grey; 
     list-style-type: none;
     text-align: left; 
-    padding: 10px   ;
-    margin: 0px 0px 10px 0px;
+    padding: 10px;
     position: fixed;
-    width: 100vw;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
   }
 
-.nav li {
+#navBar ul li {
     display: inline-block;
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px;
 }
-.nav li:hover {
-    background-color: lightgrey;
+#navBar h1 {
+    padding: 0px 0px 5px 20px;
 }
 
-#firstQuote {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    border: 0px;    
-    padding-top: 100px; 
-    text-align: center;
-} 
+#navBar ul li:hover {
+    background-color: lightgrey;
+}
 
 #cover {
     width: 100vw;
@@ -60,6 +57,7 @@ li {
     padding-top: 200px;
     text-align: center;
     display: block;
+    position: fixed;
 }
 #yesquestions {
     position: absolute;
@@ -76,131 +74,23 @@ li {
     height: 100px;
     width: 150px;
 }
-
-#target, #firstPic, #doing {
-    width: 47%;
-    /* border: solid black 3px;  */
-    padding: 10px;
-    margin: 10px;
-    position: relative;
-    line-height: 1.5em;
-}
-
-#target {
-    top: 30px;
-}
-
-#firstPic {
-    left: 750px;
-    top: -200px;
-}
-#doing {
-    top: -550px;
-}
-#actualPic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    max-width: 50%;
-}
-
-#listOne {
-    width: 300px;           
-    /* border: solid black 3px;  */ 
-    padding: 10px;
-    margin: 10px;
-}
-
-#listOne ol li::before {
-    counter-increment: movieList;
-    content: counter(movieList) ": ";
-}
-
-#listOne h3 {
-    text-align: center;
-}body {
-    background: lightblue;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
-    counter-reset: movieList;
-}
-
-h1 {
-    font-size: 22pt;
-}
-
-h2 {
-    font-size: 18pt;
-}
-h3 {
-    font-size: 18pt;
-    font-family: 'Proza Libre', sans-serif;
-    font-weight: 550;   
-    padding: 10px 10px;
-}
-
-p {
-    font-size: 12pt;
-    font-family: 'DM Sans', sans-serif;
-    padding: 10px 10px;
-    white-space: normal;
-}
-li {
-    font-size: 12pt;
-}
-.nav {
-    background-color: grey; 
-    list-style-type: none;
-    text-align: left; 
-    padding: 10px   ;
-    margin: 0px 0px 10px 0px;
-    position: fixed;
-    width: 100vw;
-  }
-
-.nav li {
-    display: inline-block;
-    text-align: center;
-    padding: 20px 20px;
-}
-.nav li:hover {
-    background-color: lightgrey;
+main div {
+    background: aquamarine;
 }
 
 #firstQuote {
     font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    border: 0px;    
-    padding-top: 100px; 
+    font-style: italic;   
     text-align: center;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    top: 120px;
+    background-color: transparent;
 } 
 
-#cover {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 200px;
-    text-align: center;
-    display: block;
-}
-#yesquestions {
-    position: absolute;
-    left: 33vw;
-    top: 50vh;
-    height: 100px;
-    width: 150px;
-}
-
-#noquestions {
-    position: absolute;
-    right: 33vw;
-    top: 50vh;
-    height: 100px;
-    width: 150px;
-}
-
 #target, #firstPic, #doing {
-    width: 47%;
-    /* border: solid black 3px;  */
+    width: 35%;
     padding: 10px;
     margin: 10px;
     position: relative;
@@ -208,15 +98,18 @@ li {
 }
 
 #target {
-    top: 30px;
+    top: 150px;
+    left: 100px;
 }
 
 #firstPic {
-    left: 750px;
-    top: -200px;
+    left: 775px;
+    top: -135px;
+    width: 40%;
 }
 #doing {
-    top: -550px;
+    top: -350px;
+    left: 100px;
 }
 #actualPic {
     display: block;
@@ -241,3 +134,4 @@ li {
 #listOne h3 {
     text-align: center;
 }
+
