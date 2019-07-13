@@ -1,11 +1,16 @@
 body {
-    background-image: images/url('images/body-background.jpg');     
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background: linear-gradient(to top left, #508CCC 0%, #ccffff 100%);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     counter-reset: movieList;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Abril Fatface', serif;
+
+}  
 h1 {
-    font-size: 22pt;
+    font-size: 22pt;  
 }
 
 h2 {
@@ -13,39 +18,46 @@ h2 {
 }
 h3 {
     font-size: 18pt;
-    font-family: 'Proza Libre', sans-serif;
-    font-weight: 550;   
     padding: 10px 10px;
 }
 
 p {
     font-size: 12pt;
-    font-family: 'DM Sans', sans-serif;
     padding: 10px 10px;
     white-space: normal;
 }
 li {
     font-size: 12pt;
 }
+
 #navBar {
-    background-color: grey; 
-    list-style-type: none;
-    text-align: left; 
-    padding: 10px;
+    background-color: #FF867D; 
+    list-style-type: none; 
+    padding: -100px 10px 10px 10px;
     position: fixed;
     width: 100%;
     top: 0px;
     z-index: 10;
+    vertical-align: middle;
   }
 
+#title {
+    height: auto;
+    max-width: 20%;
+    padding: 7px 0px 5px 20px;
+    float: left;
+    line-height: 100px;
+}
+
 #navBar ul li {
-    display: inline-block;
-    text-align: center;
+    font-size: 14pt;
+    font-weight: 400;
     padding: 20px;
+    text-align: right;
+    float: right;
+    line-height: 80px;
 }
-#navBar h1 {
-    padding: 0px 0px 5px 20px;
-}
+
 
 #navBar ul li:hover {
     background-color: lightgrey;
@@ -75,7 +87,7 @@ li {
     width: 150px;
 }
 main div {
-    background: aquamarine;
+    background: #F2FF96;
 }
 
 #firstQuote {
