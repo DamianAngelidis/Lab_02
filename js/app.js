@@ -2,10 +2,22 @@
 
 var modal = document.getElementById("cover");
 //Close the Modal
+
+function getToHome() {
+    window.location = 'index.html';
+  console.log(window.location);
+}
+
+function getToAbout() {
+    window.location = 'aboutMe.html';
+    console.log(window.location);
+}
+
 function closeModal() {
     modal.style.display = "none";
 }
 
+//Ask the person the questions
 function questions(){
     console.log(questions)
       
@@ -121,3 +133,11 @@ for(var i=0;i<questionAsk.length;i++){
     modal.style.display = "none";
 
 }
+
+document.getElementById("homebutton").onclick = function() {
+    getToHome();
+}
+document.getElementById("aboutmebutton").onclick = function() {
+    getToAbout();
+}
+
