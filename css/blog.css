@@ -1,5 +1,5 @@
 body {
-    background-color: #AEC6CF;
+    background-color: #FDFD96;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     counter-reset: movieList;
@@ -64,34 +64,6 @@ li {
     padding: 25px;
 }
 
-#cover {
-    width: 100vw;
-    height: 100vh;
-    padding-top: 200px;
-    text-align: center;
-    display: block;
-    position: absolute;
-    top: 0;
-    z-index: 12;
-    background-color: white;
-}
-#yesquestions {
-    position: absolute;
-    left: 33vw;
-    top: 50vh;
-    height: 100px;
-    width: 150px;
-}
-
-
-#noquestions {
-    position: absolute;
-    right: 33vw;
-    top: 50vh;
-    height: 100px;
-    width: 150px;
-}
-
 #firstQuote {
     font-style: italic;   
     text-align: center;
@@ -101,45 +73,3 @@ li {
     top: 20px;
     background-color: transparent;
 } 
-
-#target, #firstPic {
-    width: 35%;
-    padding: 10px;
-    margin: 10px;
-    position: relative;
-    line-height: 1.5em;
-}
-
-#target {
-    top: 120px;
-    left: 100px;
-}
-
-#firstPic {
-    left: 775px;
-    top: -275px;
-    width: 40%;
-}
-#actualPic {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    max-width: 50%;
-}
-
-#listOne {
-    width: 300px;           
-    padding: 10px;
-    margin: 10px;
-}
-
-#listOne ol li::before {
-    counter-increment: movieList;
-    content: counter(movieList) ": ";
-}
-
-#listOne h3 {
-    text-align: center;
-}
-
