@@ -9,7 +9,7 @@
     <body>
         <header>
             <!-- HEADER -->
-            <div id = 'navBar'>
+            <section id = 'navBar'>
                 <!-- LOGO -->
                 <h1>Damian Angelidis</h1>
 
@@ -20,31 +20,81 @@
                     <a href = blogs.html><li>Blogs</li></a>
                     <a href = poem.html><li>Poems</li></a>
                 </ul>
-            </div>
+            </section>
         </header>
         <main>
-            <div id = 'cover'>
-                <h2 id = 'alert'>Hey, before you go to the About Me page, do you want to play a fun little guessing game with information about my life?</h2>
+            <section id = 'cover'>
+                <h2>Hey, before you go to the About Me page, do you want to play a fun little guessing game with information about my life?</h2>
 
-                <button id ='yesquestions' onclick ='questions()'>Yes Please</button>
-                <button id ='noquestions' onclick ='closeModal()'>No, Thank You</button>
-            </div>
+                <section class = "yesquestions">Yes, Please</section>
+                <section class = "noquestions">No, Thank You</section>
+            </section>
+<!-- 
+            <section id = 'alert'>
+                <h2>Are you sure? I promise there is at least a minimal amount of fun.</h2>
 
-            <div id = 'firstQuote'>
+                <section class ='yesquestions'>Okay fine, I'll play.</section>
+                <section class ='noquestions'>I'm sure. Please take me to the page.</section>
+            </section> -->
+
+            <section id = "questionnaire">
+
+                <p>Hi there</p>
+                <!-- <form id="newStore">
+                        <fieldset>
+                            <label>Do I write poetry?</label>
+                            <select name="yesNo">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                    
+                            <br />
+                    
+                            <label>Is my favorite type of pizza New York style?</label>
+                            <select name="yesNo">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                    
+                            <br />
+                    
+                            <label>Do I have a dog?</label>
+                            <select name="yesNo">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                    
+                            <br />
+                    
+                            <label>Am I batman</label>
+                            <select name="yesNo">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                    
+                            <br   />
+                    
+                            <input type="submit" name="submitButton" value="submit" /> -->
+                    
+                        </fieldset>
+                </form>
+            </section>
+
+            <section id = 'firstQuote'>
                 <h2>"If you want self-deprecation, poor humor, under-achievement and nihilism, you're at the right place. I don't know why this is quotes."</h2>
-            </div>
+            </section>
 
-            <div id = 'target'>
+            <section id = 'target'>
                 <h3>Welcome</h3>
                 <p>This is the About Me of Damian Angelidis, aka the me, a freelance software developer and an avid comsumer of music, movies, news and politics(perhaps too much so), with a background in theater and poetry. If you are interested in the first part, checkout my resume page or my project page to see my history and my accomplishments. If your intrigued by the latter part, you can also go to the blog or poerty page to get takes, reviews, and original writing. If you're not sure, feel free to just explore.</p>
-            </div>
+            </section>
                 
-            <div id = 'firstPic'>
+            <section id = 'firstPic'>
                 <img id = 'actualPic' src = 'images/youngmeandleyla.jpg'></img>
                 <p>A picture of my sister and I from years ago, because I am too hideous to show my face now.</p>
-            </div>
+            </section>
 
-            <div id = 'listOne'>
+            <section id = 'listOne'>
                 <h3>My Top Ten Movies</h3>
 
                 <ol>
@@ -59,11 +109,11 @@
                     <li>Citizen Kane</li>
                     <li>An Elephant Sitting Still</li>
                 </ol>
-            </div>
+            </section>
 
-            <div id = 'listTwo'>
+            <section id = 'listTwo'>
 
-            </div>
+            </section>
 
         </main>
 
