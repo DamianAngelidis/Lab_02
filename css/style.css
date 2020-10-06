@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Abril Fatface', serif;
 
 }  
-h1 {
+h1 {w
     font-size: 24pt;  
 }
 
@@ -30,16 +30,16 @@ li {
     font-size: 12pt;
 }
 
-#navBar {
-    list-style-type: none; 
-    padding: -100px 0px 0px 0px;
-    position: relative;
-    width: 100%;
-    top: 0px;
-    z-index: 1;
-    height: 90px;
-    text-align: right;
-  }
+    #navBar {
+        list-style-type: none; 
+        padding: -100px 0px 0px 0px;
+        position: relative;
+        width: 100%;
+        top: 0px;
+        z-index: 1;
+        height: 90px;
+        text-align: right;
+    }
 
 #navBar ul li:hover {
     background-color: white;
@@ -75,21 +75,48 @@ li {
     z-index: 12;
     background-color: white;
 }
-#yesquestions {
+
+#alert {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 200px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+    background-color: white;
+}
+
+#questionnaire {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 200px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 12;
+    background-color: white;
+}
+
+.yesquestions {
     position: absolute;
     left: 33vw;
     top: 50vh;
     height: 100px;
     width: 150px;
+    border: 2px solid black;
 }
 
 
-#noquestions {
+.noquestions {
     position: absolute;
     right: 33vw;
     top: 50vh;
     height: 100px;
     width: 150px;
+    border: 2px solid black;
 }
 
 #firstQuote {

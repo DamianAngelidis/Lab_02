@@ -17,12 +17,12 @@ h2 {
     font-size: 18pt;
 }
 h3 {
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 10px 10px;
 }
 
 p {
-    font-size: 14pt;
+    font-size: 12pt;
     padding: 10px 10px;
     white-space: normal;
 }
@@ -72,4 +72,35 @@ li {
     margin: 10px;
     top: 20px;
     background-color: transparent;
-} 
+}
+
+.poem {
+    width: 500px;
+    position: relative; 
+    display: inline-block;
+    /* border: black 2px solid; */
+    padding:10px;
+    margin: 20px;
+}
+
+#photo {
+    top: 40px;
+    left: 155px;
+}
+#fooled {
+    top: -150px;
+    left: 275px;
+}
+#natural {
+    top: -150px;
+    left: 843px;
+}
+#hunger {
+    top: -25px;
+    left: -415px;
+}
+
+#fireflies {
+    left: 842px;
+    top: -325px;
+}

@@ -73,3 +73,9 @@ li {
     top: 20px;
     background-color: transparent;
 } 
+
+.poem {
+    widows: 300px;
+    position: relative;
+    display: inline-block;
+}
